@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,24 +10,34 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <div class="app-container">
         <header>
             <h1>Weather Forecast</h1>
         </header>
-        
+
         <main>
             <form id="location-form">
                 <div class="input-group">
-                    <input type="text" id="location-input" placeholder="Enter a location (e.g., London, Tokyo)" required>
+                    <input type="text" id="location-input" placeholder="Enter a location (e.g., London, Tokyo)"
+                        required>
                     <button type="submit">Search</button>
                 </div>
             </form>
-            
-            <div id="loading" class="hidden">Loading...</div>
+
+            <div id="loading" class="hidden">
+                <div class="spinner"></div>
+                <p>Fetching forecast...</p>
+            </div>
+
+            <div id="weather-info" class="hidden">
+                <!-- Weather Details will be injected here -->
+            </div>
         </main>
     </div>
 
     <script src="script.js"></script>
 </body>
+
 </html>
